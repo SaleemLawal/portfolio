@@ -4,32 +4,38 @@ import React, { useEffect, useState } from "react";
 export default function CustomCursor() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [hidden, setHidden] = useState(false);
+  const [isMouseDevice, setIsMouseDevice] = useState(false);
 
   useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      setPosition({ x: e.clientX, y: e.clientY });
+    const handlePointerMove = (e: PointerEvent) => {
+      if (e.pointerType === "mouse") {
+        setIsMouseDevice(true);
+        setPosition({ x: e.clientX, y: e.clientY });
+      }
     };
 
-    const handleMouseOut = (e: MouseEvent) => {
+    const handlePointerOut = (e: PointerEvent) => {
       if (!e.relatedTarget) {
         setHidden(true);
       }
     };
 
-    const handleMouseOver = () => {
+    const handlePointerOver = () => {
       setHidden(false);
     };
 
-    window.addEventListener("mousemove", handleMouseMove);
-    window.addEventListener("mouseout", handleMouseOut);
-    window.addEventListener("mouseover", handleMouseOver);
+    window.addEventListener("pointermove", handlePointerMove);
+    window.addEventListener("pointerout", handlePointerOut);
+    window.addEventListener("pointerover", handlePointerOver);
 
     return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-      window.removeEventListener("mouseout", handleMouseOut);
-      window.removeEventListener("mouseover", handleMouseOver);
+      window.removeEventListener("pointermove", handlePointerMove);
+      window.removeEventListener("pointerout", handlePointerOut);
+      window.removeEventListener("pointerover", handlePointerOver);
     };
   }, []);
+
+  if (!isMouseDevice) return null;
 
   return (
     <div
@@ -41,7 +47,7 @@ export default function CustomCursor() {
         top: `${position.y}px`,
       }}
     >
-      <div className=" pointer-events-none z-[999] w-2 h-2 rounded-full bg-black shadow-md" />
+      <div className="pointer-events-none z-[999] w-2 h-2 rounded-full bg-black shadow-md" />
     </div>
   );
 }
