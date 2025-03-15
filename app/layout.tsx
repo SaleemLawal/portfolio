@@ -1,17 +1,12 @@
 import type { Metadata } from "next";
-import { Calistoga, Inter, Poppins } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import CustomCursor from "@/components/CustomCursor";
-
-const poppins = Poppins({
-  variable: "--font-poppins",
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-});
 
 const inter = Inter({
   variable: "--font-inter",
   weight: ["400", "700"],
+  subsets: ["latin"]
 });
 
 export const metadata: Metadata = {

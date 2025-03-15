@@ -1,4 +1,3 @@
-import { motion } from "motion/react";
 import { Github, Linkedin, Send } from "lucide-react";
 import { Calistoga } from "next/font/google";
 import Link from "next/link";
@@ -7,6 +6,7 @@ import TypingAnimation from "./Name";
 
 const calistoga = Calistoga({
   weight: "400",
+  subsets: ["latin"]
 });
 
 export default function Hero() {
@@ -28,7 +28,7 @@ export default function Hero() {
           <TypingAnimation />
         </h1>
         <p className="text-center md:text-xl">
-          Hi, I'm a Software Engineer. I love creating impactful solutions and
+          Hi, I&apos;m a Software Engineer. I love creating impactful solutions and
           constantly learning through technology
         </p>
         <div className="flex space-x-3">

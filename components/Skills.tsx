@@ -2,9 +2,10 @@
 import React from "react";
 import SkillsCard from "./SkillsCard";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export type displayElement = {
-  name: String;
+  name: string;
   icon: React.JSX.Element;
 };
 
@@ -14,10 +15,11 @@ export default function Skills() {
       name: "C++",
       icon: (
         <div className="p-2 bg-[#e0e0e0] rounded-full inline-flex border-gray-700 border-4">
-          <img
+          <Image
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
             height={24}
             width={24}
+            alt="C++ icon"
           />
         </div>
       ),
@@ -26,10 +28,11 @@ export default function Skills() {
       name: "Python",
       icon: (
         <div className="p-2 bg-[#e0e0e0] rounded-full inline-flex border-gray-700 border-4">
-          <img
+          <Image
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
             height={24}
             width={24}
+            alt="Python icon"
           />
         </div>
       ),
@@ -38,10 +41,11 @@ export default function Skills() {
       name: "Java",
       icon: (
         <div className="p-2 bg-[#e0e0e0] rounded-full inline-flex border-gray-700 border-4">
-          <img
+          <Image
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
             height={24}
             width={24}
+            alt="Java icon"
           />
         </div>
       ),
@@ -50,10 +54,11 @@ export default function Skills() {
       name: "TypeScript",
       icon: (
         <div className="p-2 bg-[#e0e0e0] rounded-full inline-flex border-gray-700 border-4">
-          <img
+          <Image
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
             height={24}
             width={24}
+            alt="TypeScript icon"
           />
         </div>
       ),
@@ -62,10 +67,11 @@ export default function Skills() {
       name: "JavaScript",
       icon: (
         <div className="p-2 bg-[#e0e0e0] rounded-full inline-flex border-gray-700 border-4">
-          <img
+          <Image
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
             height={24}
             width={24}
+            alt="JavaScript icon"
           />
         </div>
       ),
@@ -74,10 +80,11 @@ export default function Skills() {
       name: "HTML/CSS",
       icon: (
         <div className="p-2 bg-[#e0e0e0] rounded-full inline-flex border-gray-700 border-4">
-          <img
+          <Image
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
             height={24}
             width={24}
+            alt="HTML/CSS icon"
           />
         </div>
       ),
@@ -89,10 +96,11 @@ export default function Skills() {
       name: "NextJS",
       icon: (
         <div className="p-2 bg-[#e0e0e0] rounded-full inline-flex border-gray-700 border-4">
-          <img
+          <Image
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
             height={24}
             width={24}
+            alt="NextJS icon"
           />
         </div>
       ),
@@ -101,10 +109,11 @@ export default function Skills() {
       name: "Spring Boot",
       icon: (
         <div className="p-2 bg-[#e0e0e0] rounded-full inline-flex border-gray-700 border-4">
-          <img
+          <Image
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg"
             height={24}
             width={24}
+            alt="Spring Boot icon"
           />
         </div>
       ),
@@ -113,10 +122,11 @@ export default function Skills() {
       name: "React",
       icon: (
         <div className="p-2 bg-[#e0e0e0] rounded-full inline-flex border-gray-700 border-4">
-          <img
+          <Image
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
             height={24}
             width={24}
+            alt="React icon"
           />
         </div>
       ),
@@ -125,10 +135,11 @@ export default function Skills() {
       name: "Node.js",
       icon: (
         <div className="p-2 bg-[#e0e0e0] rounded-full inline-flex border-gray-700 border-4">
-          <img
+          <Image
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
             height={24}
             width={24}
+            alt="Node.js icon"
           />
         </div>
       ),
@@ -137,10 +148,11 @@ export default function Skills() {
       name: "Express.js",
       icon: (
         <div className="p-2 bg-[#e0e0e0] rounded-full inline-flex border-gray-700 border-4">
-          <img
+          <Image
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg"
             height={24}
             width={24}
+            alt="Express.js icon"
           />
         </div>
       ),
@@ -149,10 +161,11 @@ export default function Skills() {
       name: "Tailwind",
       icon: (
         <div className="p-2 bg-[#e0e0e0] rounded-full inline-flex border-gray-700 border-4">
-          <img
+          <Image
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
             height={24}
             width={24}
+            alt="Tailwind icon"
           />
         </div>
       ),
@@ -161,10 +174,11 @@ export default function Skills() {
       name: "Django",
       icon: (
         <div className="p-2 bg-[#e0e0e0] rounded-full inline-flex border-gray-700 border-4">
-          <img
+          <Image
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg"
             height={24}
             width={24}
+            alt="Django icon"
           />
         </div>
       ),
@@ -173,10 +187,11 @@ export default function Skills() {
       name: "Flask",
       icon: (
         <div className="p-2 bg-[#e0e0e0] rounded-full inline-flex border-gray-700 border-4">
-          <img
+          <Image
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original-wordmark.svg"
             height={24}
             width={24}
+            alt="Flask icon"
           />
         </div>
       ),
@@ -185,10 +200,11 @@ export default function Skills() {
       name: "MongoDB",
       icon: (
         <div className="p-2 bg-[#e0e0e0] rounded-full inline-flex border-gray-700 border-4">
-          <img
+          <Image
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg"
             height={24}
             width={24}
+            alt="MongoDB icon"
           />
         </div>
       ),
@@ -197,10 +213,11 @@ export default function Skills() {
       name: "PostgreSQL",
       icon: (
         <div className="p-2 bg-[#e0e0e0] rounded-full inline-flex border-gray-700 border-4">
-          <img
+          <Image
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg"
             height={24}
             width={24}
+            alt="PostgreSQL icon"
           />
         </div>
       ),
@@ -209,10 +226,11 @@ export default function Skills() {
       name: "Supabase",
       icon: (
         <div className="p-2 bg-[#e0e0e0] rounded-full inline-flex border-gray-700 border-4">
-          <img
+          <Image
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original-wordmark.svg"
             height={24}
             width={24}
+            alt="Supabase icon"
           />
         </div>
       ),
@@ -221,10 +239,11 @@ export default function Skills() {
       name: "firebase",
       icon: (
         <div className="p-2 bg-[#e0e0e0] rounded-full inline-flex border-gray-700 border-4">
-          <img
+          <Image
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-plain-wordmark.svg"
             height={24}
             width={24}
+            alt="Firebase icon"
           />
         </div>
       ),

@@ -14,7 +14,7 @@ export default function Experiences() {
         viewport={{ once: false }}
       >
         <p className="tracking-widest font-medium leading-loose">
-          I'm an incoming Software Engineer at Bloomberg and a recent UMBC
+          I&apos;m an incoming Software Engineer at Bloomberg and a recent UMBC
           graduate with a B.Sc. in Computer Science. I specialize in backend
           development and system design, focusing on building high-performance,
           scalable, and security-driven solutions. My experience spans financial

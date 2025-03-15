@@ -17,7 +17,7 @@ export default function TimeLine() {
             <ul className="list-disc">
               <li>Incoming Software Enginner at Bloomberg LP</li>
               <li>
-                Joining Bloomberg's C++ team to build low-latency and
+                Joining Bloomberg&apos;s C++ team to build low-latency and
                 high-throughput systems
               </li>
             </ul>
